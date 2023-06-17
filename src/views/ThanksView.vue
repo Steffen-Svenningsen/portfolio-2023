@@ -1,8 +1,11 @@
 <script setup>
+
 </script>
 
 <template>
-  <RouterView />
+    <div>
+        Thanks for sending me a msg
+    </div>
 </template>
 
 <style lang="sass" scoped>

@@ -1,9 +1,10 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    Main - Homepage
   </main>
 </template>
+
+<style lang="sass" scoped></style>
