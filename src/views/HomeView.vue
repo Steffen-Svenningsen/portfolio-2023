@@ -1,4 +1,6 @@
 <script setup>
+import NewSkill from '@/components/NewSkill.vue';
+import ContactForm from '@/components/ContactForm.vue';
 </script>
 
 <template>
@@ -13,6 +15,39 @@
         <h6>Web designer & <br> Front-end developer</h6>
       </div>
     </section>
+    <section class="text-section">
+      <h1><span ref="first-line">With a passion for <span class="yellow-g">performance</span></span><span ref="second-line"> and an eye for <span class="green-g">aesthetics,</span></span><span ref="third-line">I strive to develop</span><span ref="last-line"> seamless user-friendly <span class="purple-g">frontend solutions.</span></span></h1>
+    </section>
+    <section class="project-section">Project section</section>
+    <section class="alternative-text-section">
+      <h1 class="white-grey-text">
+        The web changes every day at high speed. <span>So does the technology underneath.</span>
+      </h1>
+    </section>
+    <section class="tech-stack-section">
+      <div class="folder">Folder - show tech stack</div>
+      <div class="learning-curve">
+        <div class="skills">
+          <h1>What I'm <br> learning <br> ATM</h1>
+          <NewSkill imgSrc="/public/images/astro.png" imgAlt="Astro" title="Astro" />
+          <NewSkill imgSrc="/public/images/contentful.png" imgAlt="Contentful" title="Contentful" />
+          <NewSkill imgSrc="/public/images/spline.png" imgAlt="Spline" title="Spline" />
+        </div>
+      </div>
+    </section>
+    <section class="contact-section">
+      <div class="contact-form">
+        <h1>Let's talk<span style="color: #d9d9d9; opacity: 0.5;">.</span></h1>
+        <ContactForm />
+      </div>
+      <div class="social-links">
+        Socials
+      </div>
+    </section>
+    <footer>
+      <p>© Steffen Svenningsen 2023</p>
+      <p>Designed and developed <br> by Steffen Svenningsen</p>
+    </footer>
   </main>
 </template>
 
@@ -22,9 +57,10 @@
 main
   width: 100%
   height: 100%
+  font-family: 'Inter', sans-serif
 
   section
-    padding: 2rem
+    margin-bottom: 8rem
 
     iframe
       border-radius: $border-size
@@ -42,7 +78,6 @@ main
     h1, h3, h6
       position: absolute
       color: $white
-      font-family: 'Inter', sans-serif
 
     h1
       font-size: clamp(28px, 6vw, 96px)
@@ -68,4 +103,71 @@ main
       font-size: clamp(14px, 4vw, 36px)
       left: 1.25rem
       bottom: 1.25rem
+
+  .tech-stack-section
+
+    .learning-curve
+      display: flex
+      color: $white
+      justify-content: space-between
+      align-items: center
+      gap: 4rem
+      flex-wrap: wrap
+
+      h1
+        font-size: clamp(42px, 10vw, 96px)
+        font-weight: 600
+        border-right: 1px solid $grey
+        padding-right: 2rem
+
+      .skills
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        gap: 6rem
+        justify-content: center
+
+  .contact-section
+    padding: 1.25rem
+    border-radius: $border-size
+    border: 1px solid $grey
+    display: flex
+    gap: 4rem
+    flex-wrap: wrap
+
+    .contact-form
+      flex: 60%
+
+      h1
+        font-size: clamp(42px, 10vw, 96px)
+        font-weight: 600
+        color: $white
+        margin-bottom: 4rem
+
+    .social-links
+      flex: 30%
+
+  footer
+    color: $grey
+    border-top: 1px solid $grey
+    padding-top: 2rem
+    
+    p
+      margin-top: 1rem
+      line-height: 1.3
+
+@media (max-width: 740px)
+
+  .hero-section
+    h3
+      font-size: 14px !important
+      transform: translate(35px, 15px) !important
+
+  .skills
+    h1
+      text-align: center
+      border-right: none !important
+      padding-right: 0 !important
+      padding-bottom: 2rem
+      border-bottom: 1px solid $grey
 </style>
