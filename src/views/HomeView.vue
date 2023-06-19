@@ -16,7 +16,12 @@ import ContactForm from '@/components/ContactForm.vue';
       </div>
     </section>
     <section class="text-section">
-      <h1><span class="first-line">With a passion for <span class="yellow-g">performance</span></span><span ref="second-line"> and an eye for <span class="green-g">aesthetics,</span></span><span ref="third-line"> I strive to develop</span><span ref="last-line"> seamless user-friendly <span class="purple-g">frontend solutions.</span></span></h1>
+      <h1>
+        <span class="first-line">With a passion for <span class="yellow-g" v-motion :initial="{ opacity: 0.1 }" :visibleOnce="{ opacity: 1 }" :delay="500">performance</span></span>
+        <span class="second-line"> and an eye for <span class="green-g" v-motion :initial="{ opacity: 0.1 }" :visibleOnce="{ opacity: 1 }" :delay="1000">aesthetics,</span></span>
+        <span class="third-line"> I strive to develop</span>
+        <span class="last-line"> seamless user-friendly <span class="purple-g" v-motion :initial="{ opacity: 0.1 }" :visibleOnce="{ opacity: 1 }" :delay="1500">frontend solutions.</span></span>
+      </h1>
     </section>
     <section class="project-section">Project section</section>
     <section class="alternative-text-section">
@@ -108,8 +113,9 @@ main
 
     h1
       font-size: clamp(42px, 10vw, 96px)
-      color: $white
+      color: #f5f5f580
       font-weight: 600
+      line-height: 1.2
 
       .yellow-g
         background: linear-gradient(100deg, $yellow 45%, $orange 75%)
@@ -131,6 +137,7 @@ main
     font-size: clamp(42px, 10vw, 96px)
     color: $white
     font-weight: 600
+    line-height: 1.2
 
     span
       opacity: 0.5
