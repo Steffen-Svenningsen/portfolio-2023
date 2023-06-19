@@ -111,6 +111,21 @@ main
       color: $white
       font-weight: 600
 
+      .yellow-g
+        background: linear-gradient(100deg, $yellow 45%, $orange 75%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+
+      .green-g
+        background: linear-gradient(100deg, $green 45%, $blue 75%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+
+      .purple-g
+        background: linear-gradient(100deg, $purple 45%, $red 75%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+
 
   .white-grey-text
     font-size: clamp(42px, 10vw, 96px)
