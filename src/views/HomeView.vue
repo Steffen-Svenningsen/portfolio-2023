@@ -16,7 +16,7 @@ import ContactForm from '@/components/ContactForm.vue';
       </div>
     </section>
     <section class="text-section">
-      <h1><span ref="first-line">With a passion for <span class="yellow-g">performance</span></span><span ref="second-line"> and an eye for <span class="green-g">aesthetics,</span></span><span ref="third-line">I strive to develop</span><span ref="last-line"> seamless user-friendly <span class="purple-g">frontend solutions.</span></span></h1>
+      <h1><span ref="first-line">With a passion for <span class="yellow-g">performance</span></span><span ref="second-line"> and an eye for <span class="green-g">aesthetics,</span></span><span ref="third-line"> I strive to develop</span><span ref="last-line"> seamless user-friendly <span class="purple-g">frontend solutions.</span></span></h1>
     </section>
     <section class="project-section">Project section</section>
     <section class="alternative-text-section">
@@ -104,6 +104,22 @@ main
       left: 1.25rem
       bottom: 1.25rem
 
+  .text-section
+
+    h1
+      font-size: clamp(42px, 10vw, 96px)
+      color: $white
+      font-weight: 600
+
+
+  .white-grey-text
+    font-size: clamp(42px, 10vw, 96px)
+    color: $white
+    font-weight: 600
+
+    span
+      opacity: 0.5
+
   .tech-stack-section
 
     .learning-curve
@@ -155,6 +171,8 @@ main
     p
       margin-top: 1rem
       line-height: 1.3
+      opacity: 0.5
+      font-size: 12px
 
 @media (max-width: 740px)
 
