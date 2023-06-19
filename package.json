@@ -10,6 +10,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@vueuse/motion": "^2.0.0",
     "reset-css": "^5.0.1",
     "sass": "^1.63.4",
     "vue": "^3.3.4",
