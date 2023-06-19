@@ -16,7 +16,7 @@ import ContactForm from '@/components/ContactForm.vue';
       </div>
     </section>
     <section class="text-section">
-      <h1><span ref="first-line">With a passion for <span class="yellow-g">performance</span></span><span ref="second-line"> and an eye for <span class="green-g">aesthetics,</span></span><span ref="third-line"> I strive to develop</span><span ref="last-line"> seamless user-friendly <span class="purple-g">frontend solutions.</span></span></h1>
+      <h1><span class="first-line">With a passion for <span class="yellow-g">performance</span></span><span ref="second-line"> and an eye for <span class="green-g">aesthetics,</span></span><span ref="third-line"> I strive to develop</span><span ref="last-line"> seamless user-friendly <span class="purple-g">frontend solutions.</span></span></h1>
     </section>
     <section class="project-section">Project section</section>
     <section class="alternative-text-section">

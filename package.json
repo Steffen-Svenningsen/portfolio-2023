@@ -10,7 +10,6 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "gsap": "^3.12.1",
     "reset-css": "^5.0.1",
     "sass": "^1.63.4",
     "vue": "^3.3.4",
