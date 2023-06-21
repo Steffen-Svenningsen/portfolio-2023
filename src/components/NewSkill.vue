@@ -25,4 +25,6 @@ div
 
     h3
         margin-top: 2rem
+        font-weight: 500
+        font-size: 20px
 </style>
