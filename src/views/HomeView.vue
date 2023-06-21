@@ -2,6 +2,7 @@
 import NewSkill from '@/components/NewSkill.vue';
 import ContactForm from '@/components/ContactForm.vue';
 import ProjectCard from '@/components/ProjectCard.vue';
+import TechStack from '@/components/TechStack.vue';
 </script>
 
 <template>
@@ -53,7 +54,9 @@ import ProjectCard from '@/components/ProjectCard.vue';
       </h1>
     </section>
     <section class="tech-stack-section">
-      <div class="folder">Folder - show tech stack</div>
+      <div class="folder-container">
+        <TechStack />
+      </div>
       <div class="learning-curve">
         <div class="skills">
           <h1>What I'm <br> learning <br> ATM</h1>
@@ -63,7 +66,7 @@ import ProjectCard from '@/components/ProjectCard.vue';
         </div>
       </div>
     </section>
-    <section class="contact-section">
+    <section id="contact" class="contact-section">
       <div class="contact-form">
         <h1>Let's talk<span style="color: #d9d9d9; opacity: 0.5;">.</span></h1>
         <ContactForm />
@@ -211,6 +214,7 @@ main
       align-items: center
       gap: 4rem
       flex-wrap: wrap
+      margin-top: 2rem
 
       h1
         font-size: clamp(38px, 10vw, 96px)
