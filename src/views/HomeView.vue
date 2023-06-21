@@ -259,12 +259,19 @@ main
 @media (max-width: 740px)
 
   .hero-section
+
+    h6
+      text-align: right
+      right: 1.25rem
+
     .desktop-h3-text
       display: none !important
 
     .mobile-hero
       display: block !important
-      right: 2rem !important
+      
+      .mobile-h3-text
+        right: 2rem !important
 
       span
         border-radius: 18px !important
