@@ -1,5 +1,5 @@
 <template>
-    <form action="https://formsubmit.co/stef7625@gmail.com" method="POST">
+    <form action="https://formsubmit.co/d89f1384369cf512ca4e61d86924c142" method="POST">
         <div>
             <input type="text" placeholder="Name" name="name" required>
             <input type="email" placeholder="Email" name="email" required>
