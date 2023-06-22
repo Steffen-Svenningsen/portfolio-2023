@@ -210,11 +210,15 @@ main
     .learning-curve
       display: flex
       color: $white
-      justify-content: space-between
+      justify-content: center
       align-items: center
       gap: 4rem
       flex-wrap: wrap
-      margin-top: 2rem
+      background: #d9d9d950
+      width: fit-content
+      margin: 0 4rem
+      padding: 4rem
+      border-radius: 0 0 $border-size $border-size
 
       h1
         font-size: clamp(38px, 10vw, 96px)
