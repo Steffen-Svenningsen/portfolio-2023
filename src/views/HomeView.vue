@@ -33,19 +33,19 @@ import TechStack from '@/components/TechStack.vue';
     <section class="project-section">
       <div class="project-row">
         <div class="flex-30">
-          <ProjectCard title="Acera" imgSrc="/public/images/Acera.png" imgDesc="Acera" techStack="Vue, Contentful, DigitalOcean, Sass, Swiper.js" linkPath="https://acera.dk/" />
+          <ProjectCard title="Acera" imgSrc="/public/images/Acera.png" imgDesc="Acera" techStack="Vue, TypeScript, Contentful, DigitalOcean, Sass, Swiper.js" linkPath="https://acera.dk/" />
         </div>
         <div class="flex-60">
-          <ProjectCard title="Pokémon App" imgSrc="/public/images/Pokemon.png" imgDesc="Pokémon App" techStack="Vue, PokeAPI, Sass, Axios" linkPath="https://svenningsen.dev/pokemon" />
+          <ProjectCard title="Pokémon App" imgSrc="/public/images/Pokemon.png" imgDesc="Pokémon App" techStack="Vue, JavaScript, PokeAPI, Sass, Axios" linkPath="https://svenningsen.dev/pokemon" />
         </div>
       </div>
       <div class="project-row flex-wrap">
-          <ProjectCard class="card-item" title="Levels" imgSrc="/public/images/Levels.png" imgDesc="Levels" techStack="React, React-router, Css, GetForm" linkPath="https://svenningsen.dev/levels" />
-          <ProjectCard class="card-item" title="Crypto App" imgSrc="/public/images/Crypto.png" imgDesc="Crypto App" techStack="Vue, Sass, Vue-router, Axios, CryptoCompare API" linkPath="https://svenningsen.dev/crypto" />
-          <ProjectCard class="card-item" title="Zoo PWA" imgSrc="/public/images/Zoo.png" imgDesc="Zoo PWA" techStack="React, React-router, PWA, Firebase, Sass" linkPath="https://svenningsen.dev/zoo-app" />
+          <ProjectCard class="card-item" title="Levels" imgSrc="/public/images/Levels.png" imgDesc="Levels" techStack="React, React-router, JavaScript, CSS, GetForm, Swiper.js" linkPath="https://svenningsen.dev/levels" />
+          <ProjectCard class="card-item" title="Crypto App" imgSrc="/public/images/Crypto.png" imgDesc="Crypto App" techStack="Vue, JavaScript, Sass, Vue-router, Axios, CryptoCompare API" linkPath="https://svenningsen.dev/crypto" />
+          <ProjectCard class="card-item" title="Zoo PWA" imgSrc="/public/images/Zoo.png" imgDesc="Zoo PWA" techStack="React, JavaScript, React-router, PWA, Firebase, Sass, Swiper.js" linkPath="https://svenningsen.dev/zoo-app" />
       </div>
       <div>
-        <ProjectCard title="Zynaps" imgSrc="/public/images/Zynaps.png" imgDesc="Zynaps" techStack="WordPress, Yoast, ContactForm 7" linkPath="https://zynaps.dk" />
+        <ProjectCard title="Zynaps" imgSrc="/public/images/Zynaps.png" imgDesc="Zynaps" techStack="WordPress, Yoast, ContactForm 7, Tideo, MegaMenu, Tribute Testimonials, CSS, HTML" linkPath="https://zynaps.dk" />
       </div>
     </section>
     <section class="alternative-text-section">
@@ -59,10 +59,12 @@ import TechStack from '@/components/TechStack.vue';
       </div>
       <div class="learning-curve">
         <div class="skills">
-          <h1>What I'm <br> learning <br> ATM</h1>
-          <NewSkill imgSrc="/public/images/astro.png" imgAlt="Astro" title="Astro" />
-          <NewSkill imgSrc="/public/images/contentful.png" imgAlt="Contentful" title="Contentful" />
-          <NewSkill imgSrc="/public/images/spline.png" imgAlt="Spline" title="Spline" />
+          <h1>What I'm learning <br> at the moment</h1>
+          <div class="skill-container">
+            <NewSkill imgSrc="/public/images/astro.png" imgAlt="Astro" title="Astro" />
+            <NewSkill imgSrc="/public/images/contentful.png" imgAlt="Contentful" title="Contentful" />
+            <NewSkill imgSrc="/public/images/spline.png" imgAlt="Spline" title="Spline" />
+          </div>
         </div>
       </div>
     </section>
@@ -72,7 +74,30 @@ import TechStack from '@/components/TechStack.vue';
         <ContactForm />
       </div>
       <div class="social-links">
-        Socials
+        <div class="linkedin">
+          <a target="_blank" href="https://www.linkedin.com/in/steffen-svenningsen/">
+            <img src="/public/images/linkedin.png" alt="LinkedIn">
+            LinkedIn
+          </a>
+        </div>
+        <div class="github">
+          <a target="_blank" href="https://github.com/Steffen-Svenningsen">
+            <img src="/public/images/github.png" alt="GitHub" />
+            GitHub
+          </a>
+        </div>
+        <div class="mail">
+          <a target="_blank" href="mailto:stef7625@gmail.com">
+            <img src="/public/images/mail.png" alt="Mail" />
+            Mail
+          </a>
+        </div>
+        <div class="resume">
+          <a href="#" download>
+            <img src="/public/images/resume.png" alt="Resume" />
+            Download Resumé
+          </a>
+        </div>
       </div>
     </section>
     <footer>
@@ -214,24 +239,30 @@ main
       align-items: center
       gap: 4rem
       flex-wrap: wrap
-      background: #d9d9d950
       width: fit-content
-      margin: 0 4rem
-      padding: 4rem
-      border-radius: 0 0 $border-size $border-size
+      margin: auto
+      padding-top: 2rem
 
       h1
         font-size: clamp(38px, 10vw, 96px)
         font-weight: 600
-        border-right: 1px solid $grey
-        padding-right: 2rem
+        border-bottom: 1px solid $grey
+        text-align: center
+        padding-bottom: 0.5rem
 
       .skills
         display: flex
+        flex-direction: column
         flex-wrap: wrap
         align-items: center
-        gap: 6rem
+        gap: 4rem
         justify-content: center
+
+        .skill-container
+          display: flex
+          gap: 6rem
+          flex-wrap: wrap
+          justify-content: center
 
   .contact-section
     padding: 1.25rem
@@ -252,6 +283,48 @@ main
 
     .social-links
       flex: 30%
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+      div
+        width: 100%
+        height: 100px
+        border-radius: 12px
+        display: flex
+        align-items: center
+        border: 1px solid $white
+        margin-bottom: 1rem
+        transition: 0.2s
+
+        &:hover
+          transform: scale(1.015)
+
+        &:last-of-type
+          margin-bottom: 0 
+
+        a
+          width: 100%
+          height: 100%
+          text-decoration: none
+          color: $white
+          font-size: 24px
+          font-weight: 500
+          display: flex
+          align-items: center
+          gap: 1rem
+
+      .linkedin
+        background: linear-gradient(115deg, $blue 60%, $green 100%)
+
+      .resume
+        background: #1b1b1b
+
+      .github
+        background: linear-gradient(115deg, $orange 60%, $yellow 100%)
+
+      .mail
+        background: linear-gradient(115deg, $purple 60%, $red 100%)
 
   footer
     color: $grey
@@ -263,6 +336,12 @@ main
       line-height: 1.3
       opacity: 0.5
       font-size: 12px
+
+@media (max-width: 490px)
+  .skills
+    h1
+      br
+        display: none
 
 @media (max-width: 740px)
 
@@ -284,14 +363,6 @@ main
       span
         border-radius: 18px !important
         padding: 0.15rem 0.75rem !important
-
-  .skills
-    h1
-      text-align: center
-      border-right: none !important
-      padding-right: 0 !important
-      padding-bottom: 2rem
-      border-bottom: 1px solid $grey
 
   .project-section
     .project-row
