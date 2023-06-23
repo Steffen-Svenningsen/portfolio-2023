@@ -6,7 +6,7 @@
             <h3>" As a web developer it's crucial to learn new stuff and keep up with technologies.</h3>
             <div class="tools">
                 <u>Tools I tend to use when designing and developing web experiences</u>
-                <h4><span class="green">Vue</span> - <span class="blue">React</span> - Figma - <span class="purple">Sass</span> - JavaScript - TypeScript - <span class="pink">Photoshop</span> - Shopify - PUG - <span class="red">GitHub</span> - Wordpress - LottieFiles - <span class="orange">Motion One</span> - Swiper.js</h4>
+                <h4><span class="green">Vue</span> - <span class="blue">React</span> - Figma - <span class="purple">Sass</span> - JavaScript - TypeScript - <span class="pink">Photoshop</span> - Shopify - PUG - <span class="red">GitHub</span> - WordPress - LottieFiles - <span class="orange">Motion One</span> - Swiper.js</h4>
             </div>
         </div>
         <div>
