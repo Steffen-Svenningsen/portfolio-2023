@@ -33,19 +33,19 @@ import TechStack from '@/components/TechStack.vue';
     <section class="project-section">
       <div class="project-row">
         <div class="flex-30">
-          <ProjectCard title="Acera" imgSrc="/public/images/Acera.png" imgDesc="Acera" techStack="Vue, TypeScript, Contentful, DigitalOcean, Sass, Swiper.js" linkPath="https://acera.dk/" />
+          <ProjectCard title="Acera" imgSrc="/images/Acera.png" imgDesc="Acera" techStack="Vue, TypeScript, Contentful, DigitalOcean, Sass, Swiper.js" linkPath="https://acera.dk/" />
         </div>
         <div class="flex-60">
-          <ProjectCard title="Pokémon App" imgSrc="/public/images/Pokemon.png" imgDesc="Pokémon App" techStack="Vue, JavaScript, PokeAPI, Sass, Axios" linkPath="https://svenningsen.dev/pokemon" />
+          <ProjectCard title="Pokémon App" imgSrc="/images/Pokemon.png" imgDesc="Pokémon App" techStack="Vue, JavaScript, PokeAPI, Sass, Axios" linkPath="https://svenningsen.dev/pokemon" />
         </div>
       </div>
       <div class="project-row flex-wrap">
-          <ProjectCard class="card-item" title="Levels" imgSrc="/public/images/Levels.png" imgDesc="Levels" techStack="React, React-router, JavaScript, CSS, GetForm, Swiper.js" linkPath="https://svenningsen.dev/levels" />
-          <ProjectCard class="card-item" title="Crypto App" imgSrc="/public/images/Crypto.png" imgDesc="Crypto App" techStack="Vue, JavaScript, Sass, Vue-router, Axios, CryptoCompare API" linkPath="https://svenningsen.dev/crypto" />
-          <ProjectCard class="card-item" title="Zoo PWA" imgSrc="/public/images/Zoo.png" imgDesc="Zoo PWA" techStack="React, JavaScript, React-router, PWA, Firebase, Sass, Swiper.js" linkPath="https://svenningsen.dev/zoo-app" />
+          <ProjectCard class="card-item" title="Levels" imgSrc="/images/Levels.png" imgDesc="Levels" techStack="React, React-router, JavaScript, CSS, GetForm, Swiper.js" linkPath="https://svenningsen.dev/levels" />
+          <ProjectCard class="card-item" title="Crypto App" imgSrc="/images/Crypto.png" imgDesc="Crypto App" techStack="Vue, JavaScript, Sass, Vue-router, Axios, CryptoCompare API" linkPath="https://svenningsen.dev/crypto" />
+          <ProjectCard class="card-item" title="Zoo PWA" imgSrc="/images/Zoo.png" imgDesc="Zoo PWA" techStack="React, JavaScript, React-router, PWA, Firebase, Sass, Swiper.js" linkPath="https://svenningsen.dev/zoo-app" />
       </div>
       <div>
-        <ProjectCard title="Zynaps" imgSrc="/public/images/Zynaps.png" imgDesc="Zynaps" techStack="WordPress, Yoast, ContactForm 7, Tideo, MegaMenu, Tribute Testimonials, CSS, HTML" linkPath="https://zynaps.dk" />
+        <ProjectCard title="Zynaps" imgSrc="/images/Zynaps.png" imgDesc="Zynaps" techStack="WordPress, Yoast, ContactForm 7, Tideo, MegaMenu, Tribute Testimonials, CSS, HTML" linkPath="https://zynaps.dk" />
       </div>
     </section>
     <section class="alternative-text-section">
@@ -61,9 +61,9 @@ import TechStack from '@/components/TechStack.vue';
         <div class="skills">
           <h1>What I'm learning <br> at the moment</h1>
           <div v-motion-slide-visible-once-bottom :delay="200" class="skill-container">
-            <NewSkill imgSrc="/public/images/astro.png" imgAlt="Astro" title="Astro" />
-            <NewSkill imgSrc="/public/images/contentful.png" imgAlt="Contentful" title="Contentful" />
-            <NewSkill imgSrc="/public/images/spline.png" imgAlt="Spline" title="Spline" />
+            <NewSkill imgSrc="/images/astro.png" imgAlt="Astro" title="Astro" />
+            <NewSkill imgSrc="/images/contentful.png" imgAlt="Contentful" title="Contentful" />
+            <NewSkill imgSrc="/images/spline.png" imgAlt="Spline" title="Spline" />
           </div>
         </div>
       </div>
@@ -76,25 +76,25 @@ import TechStack from '@/components/TechStack.vue';
       <div class="social-links">
         <div class="linkedin">
           <a target="_blank" href="https://www.linkedin.com/in/steffen-svenningsen/">
-            <img src="/public/images/linkedin.png" alt="LinkedIn">
+            <img src="/images/linkedin.png" alt="LinkedIn">
             LinkedIn
           </a>
         </div>
         <div class="github">
           <a target="_blank" href="https://github.com/Steffen-Svenningsen">
-            <img src="/public/images/github.png" alt="GitHub" />
+            <img src="/images/github.png" alt="GitHub" />
             GitHub
           </a>
         </div>
         <div class="mail">
           <a target="_blank" href="mailto:stef7625@gmail.com">
-            <img src="/public/images/mail.png" alt="Mail" />
+            <img src="/images/mail.png" alt="Mail" />
             Mail
           </a>
         </div>
         <div class="resume">
-          <a href="/public/Resumé.pdf" download>
-            <img src="/public/images/resume.png" alt="Resume" />
+          <a href="/Resumé.pdf" download>
+            <img src="/images/resume.png" alt="Resume" />
             Download Resumé
           </a>
         </div>
