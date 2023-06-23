@@ -16,7 +16,6 @@
 form
     display: flex
     flex-direction: column
-    gap: 2rem
     width: 100%
 
     div
@@ -39,12 +38,15 @@ form
         padding: 0.5rem
         border-radius: 8px
         outline: none
+        margin: 2rem 0 1rem 0
 
     button
-        padding: 0.75rem
+        padding: 1.25rem 0.75rem
+        font-weight: 500
         font-family: 'Inter', sans-serif
         cursor: pointer
         border-radius: 8px
+        font-size: 1rem
         border: none
         background: $grey
         color: #1b1b1b
