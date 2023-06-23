@@ -93,7 +93,7 @@ import TechStack from '@/components/TechStack.vue';
           </a>
         </div>
         <div class="resume">
-          <a href="#" download>
+          <a href="/public/Resumé.pdf" download>
             <img src="/public/images/resume.png" alt="Resume" />
             Download Resumé
           </a>
