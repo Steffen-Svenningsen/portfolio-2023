@@ -60,7 +60,7 @@ import TechStack from '@/components/TechStack.vue';
       <div class="learning-curve">
         <div class="skills">
           <h1>What I'm learning <br> at the moment</h1>
-          <div class="skill-container">
+          <div v-motion-slide-visible-once-bottom :delay="200" class="skill-container">
             <NewSkill imgSrc="/public/images/astro.png" imgAlt="Astro" title="Astro" />
             <NewSkill imgSrc="/public/images/contentful.png" imgAlt="Contentful" title="Contentful" />
             <NewSkill imgSrc="/public/images/spline.png" imgAlt="Spline" title="Spline" />
