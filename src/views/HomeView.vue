@@ -9,7 +9,8 @@ import TechStack from '@/components/TechStack.vue';
   <main>
     <section class="hero-section">
       <div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;">
-        <iframe title="Video" src="https://streamable.com/e/k5owgb?autoplay=1&nocontrols=1" frameborder="0" width="100%" height="100%" allowfullscreen allow="autoplay" style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+        <iframe class="hero-video-desktop" title="Video" src="https://streamable.com/e/k5owgb?autoplay=1&nocontrols=1" frameborder="0" width="100%" height="100%" allowfullscreen allow="autoplay" style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+        <img class="hero-image-mobile" src="/images/mobile-poster.webp" alt="Hero Poster" style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;">
         <div class="video-overlay">
         </div>
         <h1>Steffen <br> Svenningsen.</h1>
@@ -128,6 +129,10 @@ main
       background: $black
       opacity: 50%
       border-radius: $border-size
+
+    .hero-image-mobile
+      display: none
+      border-radius: 12px
 
   .hero-section
 
@@ -338,6 +343,17 @@ main
       font-size: 12px
 
 @media (max-width: 490px)
+
+  .hero-section
+    .hero-video-desktop
+      display: none
+
+    .hero-image-mobile
+      display: block
+
+    .video-overlay
+      border-radius: 12px !important
+
   .skills
     h1
       br
