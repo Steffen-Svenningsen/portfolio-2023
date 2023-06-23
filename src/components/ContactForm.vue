@@ -3,6 +3,7 @@
         <div>
             <input type="text" placeholder="Name" name="name" required>
             <input type="email" placeholder="Email" name="email" required>
+            <input type="hidden" name="_next" value="https://svenningsen.dev/thank-you">
         </div>
         <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
         <button type="submit">Send</button>
@@ -35,9 +36,14 @@ form
         resize: none
         font-family: 'Inter', sans-serif
         padding: 0.5rem
+        border-radius: 8px
+        outline: none
 
     button
         padding: 0.75rem
         font-family: 'Inter', sans-serif
         cursor: pointer
+        border-radius: 8px
+        border: none
+
 </style>
