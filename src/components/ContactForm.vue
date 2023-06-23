@@ -31,6 +31,7 @@ form
             background: none
             outline: none
             color: $white
+            border-radius: 0
 
     textarea
         resize: none
@@ -45,5 +46,7 @@ form
         cursor: pointer
         border-radius: 8px
         border: none
+        background: $grey
+        color: #1b1b1b
 
 </style>

@@ -9,7 +9,7 @@ import TechStack from '@/components/TechStack.vue';
   <main>
     <section class="hero-section">
       <div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;">
-        <iframe src="https://streamable.com/e/k5owgb?autoplay=1&nocontrols=1" frameborder="0" width="100%" height="100%" allowfullscreen allow="autoplay" style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+        <iframe title="Video" src="https://streamable.com/e/k5owgb?autoplay=1&nocontrols=1" frameborder="0" width="100%" height="100%" allowfullscreen allow="autoplay" style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
         <div class="video-overlay">
         </div>
         <h1>Steffen <br> Svenningsen.</h1>
@@ -359,6 +359,7 @@ main
       
       .mobile-h3-text
         right: 2rem !important
+        transform: translateY(-30%) !important
 
       span
         border-radius: 18px !important
